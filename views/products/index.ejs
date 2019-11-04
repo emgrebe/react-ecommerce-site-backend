@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Krazy Kendra Sale</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Krazy Kendra Sale</h1>
+    <ul>
+      <a id='cart' href='/products/orders'> View Cart </a><br>
+      <% if (user) { %>
+        <a id='logout' href='/logout'> Log Out </a>
+        <% } else { %>
+          <a id='login' href='/auth/google'> Login with Google </a>
+          <% } %>
+    </ul>
+  </body>
+</html>
